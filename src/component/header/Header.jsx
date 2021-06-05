@@ -12,7 +12,7 @@ export default function Header() {
       </div>
       <img
         className="header__img"
-        src="https://images.unsplash.com/photo-1622863891295-dc4bbf8a5d30?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+        src="https://images.unsplash.com/photo-1496347646636-ea47f7d6b37b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80"
         alt="blog"
       />
     </div>
