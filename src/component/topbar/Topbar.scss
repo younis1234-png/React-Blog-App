@@ -39,11 +39,11 @@
     list-style: none;
     margin-right: 20px;
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 100;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     &:hover {
-      font-weight: 300;
+      font-weight: 200;
       border-bottom: 1px solid black;
     }
   }
