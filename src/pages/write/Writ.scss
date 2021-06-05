@@ -1,0 +1,55 @@
+.write {
+  padding-top: 50px;
+  &__form {
+    position: relative;
+  }
+  &__group {
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 50% !important;
+    border: 1px solid !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 20px !important;
+    color: rgb(182, 182, 182) !important;
+    cursor: pointer;
+  }
+  &__input {
+    background-color: #f3f3f3;
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__inputFile {
+    display: none;
+  }
+  &__inputText {
+  }
+  &__textarea {
+    border-top: 1px solid rgb(193, 193, 193);
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 22px;
+    padding: 30px;
+  }
+  &__btn {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: #fff;
+    background-color: teal;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+  }
+}

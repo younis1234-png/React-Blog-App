@@ -18,7 +18,7 @@ export default function Sidebar() {
         </p>
       </div>
       <div className="sidebar__sidebarItem">
-        <span className="sidebar__sidebarTitle">CATEGORIES</span>
+        <span className="sidebar__sidebarTitle mg">CATEGORIES</span>
         <ul className="sidebar__sidebarList">
           <li className="sidebar__sidebarListItem">Life</li>
           <li className="sidebar__sidebarListItem">Books</li>
@@ -29,7 +29,7 @@ export default function Sidebar() {
         </ul>
       </div>
       <div className="sidebar__sidebarItem">
-        <span className="sidebar__sidebarTitle">FOLLOW US</span>
+        <span className="sidebar__sidebarTitle">FOLLOW ME</span>
         <div className="sidebar__socialIcons">
           <Facebook className="sidebar__social" />
           <Twitter className="sidebar__social" />
