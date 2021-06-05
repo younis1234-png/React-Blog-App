@@ -4,12 +4,14 @@ import "./app.scss";
 import Home from "./pages/homePage/Home";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
+import Settings from "./pages/settings/Settings";
+import Login from "./pages/login/Logind";
 
 const App = () => {
   return (
     <div>
       <Topbar />
-      <Write />
+      <Login />
     </div>
   );
 };

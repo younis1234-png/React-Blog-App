@@ -1,0 +1,78 @@
+.settings {
+  display: flex;
+  margin-left: 20px;
+  &__wrapper {
+    flex: 9;
+    padding-top: 20px;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__titleUpdate {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: lightcoral;
+  }
+  &__titleDelete {
+    color: rgb(188, 82, 82);
+    font-size: 12px;
+    cursor: pointer;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__porfileImg {
+    display: flex !important;
+    align-items: center !important;
+    margin: 10px 0 !important;
+  }
+  &__porfileImg > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  &__icon {
+    width: 25px !important;
+    height: 25px !important;
+    border: 50% !important;
+    background-color: lightcoral !important;
+    color: #fff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: 10px !important;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  &__form > label {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 200;
+  }
+  &__form > input {
+    color: gray;
+    margin: 10px 0;
+    height: 30px;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid lightgrey;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__btn {
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: teal;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
