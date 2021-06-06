@@ -2,8 +2,11 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
+const authRoute = require("./routes/auth");
 
 dotenv.config();
+// to send any json object
+app.use(express.json());
 
 mongoose
   .connect(process.env.MONGO_URL, {
@@ -14,10 +17,7 @@ mongoose
   .then(console.log("Connected to mongoDB"))
   .catch((err) => console.log(err));
 
-  
-app.use("/", (req, res) => {
-  console.log("hey this is main url");
-});
+app.use("/api/auth", authRoute);
 
 app.listen("5000", () => {
   console.log("Backend is running ");
