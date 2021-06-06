@@ -17,7 +17,7 @@ export default function Login() {
           type="password"
           placeholder="Enter your password..."
         />
-        <button className="loginb__utton">Login</button>
+        <button className="login__button">Login</button>
       </form>
       <button className="login__registerButton">Register</button>
     </div>
