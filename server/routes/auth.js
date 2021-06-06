@@ -1,12 +1,8 @@
 const router = require("express").Router();
 const User = require("../models/User");
-// not to show our password
 const bcrypt = require("bcrypt");
 
 //***REGISTER**//
-// this is going to fetch data, connect to database
-// and trey to create. a new user
-//this all gonna take sum time
 router.post("/register", async (req, res) => {
   try {
     const salt = await bcrypt.genSalt(10);
@@ -25,5 +21,21 @@ router.post("/register", async (req, res) => {
 });
 
 //LOGIN
+router.post("/login", async (req, res) => {
+  try {
+    //user validation
+    const user = await User.findOne({ username: req.body.username });
+    !user && res.status(400).json("Wrong cerdentials");
+    // password validation
+    const validate = await bcrypt.compare(req.body.password, user.password);
+    !validate && res.status(400).json("Wrong cerdentials");
+
+    //not to send the password but the other props
+    const { password, ...others } = user._doc;
+    res.status(200).json(others);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;
