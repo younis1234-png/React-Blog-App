@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/User");
+const posRoute = require("./routes/Post");
 
 dotenv.config();
 // to send any json object
@@ -20,10 +21,8 @@ mongoose
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
+app.use("/api/posts", posRoute);
 
 app.listen("5000", () => {
   console.log("Backend is running ");
 });
-
-// lxIsKXLr2WS0ps2u
-// mongodb+srv://blog:lxIsKXLr2WS0ps2u@cluster0.izv3g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
