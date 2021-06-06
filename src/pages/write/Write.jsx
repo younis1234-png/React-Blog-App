@@ -1,9 +1,9 @@
 import React from "react";
 import "./Writ.scss";
 import AddIcon from "@material-ui/icons/Add";
-import { Button } from "@material-ui/core";
 
 export default function Write() {
+
   return (
     <div className="write">
       <img
